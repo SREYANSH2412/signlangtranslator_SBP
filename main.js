@@ -6,12 +6,6 @@ video elements, etc. It is also handles the training, prediction, and video call
 - The PredictionOutput class converts the predicted text passed by Main into text, image, and audio
 output. This class is also responsible for turning a caller's words into speech in video call mode.
 
-Credits:
-The kNN Classifier used for this project was created by Google TensorFlow. 
-The kNN classifier requires the computation of random numbers that is not readily available on JavaScript.
-To accomplish this, the work of Johannes Baagøe on "implementations of Randomness in Javascript" was used.
-Additionally, usage of TensorFlow was learned from Abishek Singh's "alexa-sign-language-translator".
-
 */
 
 // Importing the k-Nearest Neighbors Algorithm
@@ -726,8 +720,7 @@ class PredictionOutput {
     this.translatedCard.innerHTML = " ";
   }
 
-  /*The function below is adapted from https://stackoverflow.com/questions/45071353/javascript-copy-text-string-on-click/53977796#53977796
-  It copies the translated text to the user's clipboard*/
+  /*  It copies the translated text to the user's clipboard*/
   copyTranslation() {
     this.translationHolder.addEventListener('mousedown', () => {
       main.setStatusText("Text Copied!", "copy");

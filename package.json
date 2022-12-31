@@ -1,7 +1,7 @@
 {
   "name": "sign-language-translator",
   "version": "0.0.1",
-  "license": "do what you want but try to give back",
+  "license": "Stuck Between Pixels",
   "dependencies": {
     "deeplearn": "~0.5.0",
     "deeplearn-knn-image-classifier": "^0.3.0",
